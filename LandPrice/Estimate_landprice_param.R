@@ -7,8 +7,9 @@
 library(caret)
 library(ggplot2)
 library("makedummies")
-
-setwd("/Users/fukonakai/Documents/GitHub/optLanduse/")
+# Please change the path below
+cp = 'path_to_SpatialOpt'
+setwd(cp)
 data <- read.csv("LandPrice/in/Toyo_SocioEconomicData.csv", fileEncoding = 'utf-8')
 colnames(data)[colnames(data) == "メッシ."] <- "ID"
 original <- read.csv('Model/in/Toyohashi_area_x0_original.csv')
